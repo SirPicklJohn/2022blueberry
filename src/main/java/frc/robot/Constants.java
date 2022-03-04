@@ -4,6 +4,8 @@
 
 package frc.robot;
 
+import java.util.function.DoubleSupplier;
+
 import edu.wpi.first.wpilibj.Joystick;
 
 /**
@@ -24,8 +26,8 @@ public final class Constants {
         public static final double kDefaultSpeed = 1.0;
         public static final double kSlowDriveSpeed = .5;
 
-        
 
+        public static final double kAutonSpeed = .4;
     }
     public static final class OIConstants{
         public static final int kJoystick = 0;

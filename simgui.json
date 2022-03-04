@@ -11,6 +11,16 @@
         "window": {
           "visible": true
         }
+      },
+      "/LiveWindow/Ungrouped/DifferentialDrive[1]": {
+        "window": {
+          "visible": true
+        }
+      },
+      "/LiveWindow/Ungrouped/Scheduler": {
+        "window": {
+          "visible": true
+        }
       }
     }
   }

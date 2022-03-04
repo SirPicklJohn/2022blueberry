@@ -6,6 +6,7 @@ package frc.robot;
 
 import java.nio.file.DirectoryIteratorException;
 
+
 import edu.wpi.first.wpilibj.GenericHID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.XboxController;
@@ -36,8 +37,7 @@ public class RobotContainer {
     // Configure the button bindings
     configureButtonBindings();
 
-    m_drive.setDefaultCommand(new TankDrive(() -> -m_xboxStick.getLeftY(), () -> m_xboxStick.getRightX(), m_drive));
-
+    m_drive.setDefaultCommand(new TankDrive(() -> -m_xboxStick.getLeftY(), () -> m_xboxStick.getRightY(), m_drive));
   }
 
   /**
@@ -54,6 +54,6 @@ public class RobotContainer {
    * @return the command to run in autonomous
    */
   public Command getAutonomousCommand() {
-    return new WaitCommand(15); //does nothing
+    return new WaitCommand(15); //autonomous command
   }
 }

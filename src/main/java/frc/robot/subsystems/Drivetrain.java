@@ -37,7 +37,7 @@ public class Drivetrain extends SubsystemBase {
 
   private final ShuffleboardTab m_tab = Shuffleboard.getTab("Main");
   private final NetworkTableEntry m_maxSpeed;
-
+  
 
   /** Creates a new Drivetrain. */
   public Drivetrain() {
@@ -64,18 +64,19 @@ public class Drivetrain extends SubsystemBase {
   }
 
 //drive speeds
+/*
   public void slowDriveSpeed() {
     tempSpeed = m_maxSpeed.getDouble(1.0);
     m_maxSpeed.setDouble(tempSpeed * DriveConstants.kSlowDriveSpeed);
   }
-
+*/
   /**
    * Returns the drive speed to the original speed.
    */
   public void normalDriveSpeed() {
     m_maxSpeed.setDouble(tempSpeed);
   }
-////////
+ ////////
   
 
   @Override
